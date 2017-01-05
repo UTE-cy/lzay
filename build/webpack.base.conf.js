@@ -33,8 +33,7 @@ module.exports = {
     fallback: [path.join(__dirname, '../node_modules')]
   },
   module: {
-    preLoaders: [
-      {
+    preLoaders: [{
         test: /\.vue$/,
         loader: 'eslint',
         include: projectRoot,
@@ -47,8 +46,7 @@ module.exports = {
         exclude: /node_modules/
       }
     ],
-     loaders: [
-      {
+    loaders: [{
         test: /\.vue$/,
         loader: 'vue'
       },
@@ -84,7 +82,9 @@ module.exports = {
     formatter: require('eslint-friendly-formatter')
   },
   vue: {
-    loaders: utils.cssLoaders({ sourceMap: useCssSourceMap }),
+    loaders: utils.cssLoaders({
+      sourceMap: useCssSourceMap
+    }),
     postcss: [
       require('autoprefixer')({
         browsers: ['last 2 versions']

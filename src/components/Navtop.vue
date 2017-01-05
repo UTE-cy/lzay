@@ -16,23 +16,25 @@
 </template>
 
 <script>
-export default {}
+  export default {}
 </script>
 
-<style lang="css">
-.nav li{
-  line-height: 50px;
-}
-.nav li.router-link-active{
-	background: #FFFFFF;
-	color: #E20000;
-	font-weight: bold;
-  padding: 0 20px;
-}
-.nav li.router-link{
-	color: #000000;
-	font-weight: bold;
-}
-
+<style lang="scss">
+  .nav{
+    background-color: rgba(255, 0, 0, 0);
+    li{
+      line-height: 50px;
+    }
+    li.router-link-active{
+      background: #FFFFFF;
+    	color: #E20000;
+    	font-weight: bold;
+      padding: 0 20px;
+    }
+    li.router-link{
+    	color: #000000;
+    	font-weight: bold;
+    }
+  }
 
 </style>
